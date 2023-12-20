@@ -81,7 +81,7 @@ Deno.cron("YORU1", "0 7 * * *", () => {
   });
 })
 
-Deno.cron("ASA1", "0 15 * * * *", () => {
+Deno.cron("ASA1", "0 15 * * *", () => {
   const content = Math.random() > 0.5 ? "おはよー" : "おはよ♡"
   fetch("https://discord.com/api/v9/channels/" + channelId + "/messages", {
     "headers": {
