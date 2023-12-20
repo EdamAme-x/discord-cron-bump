@@ -1,0 +1,7 @@
+run = "deno run -A --unstable index.ts"
+
+[nix]
+channel = "stable-22_11"
+
+[deployment]
+run = ["sh", "-c", "deno run -A --unstable index.ts"]
