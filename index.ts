@@ -1,7 +1,6 @@
 import { Hono } from "https://deno.land/x/hono@v3.0.0/mod.ts";
-
 const channelId = "1176797208922820608";
-const auth = (Deno.args[0] ? Deno.env.get("auth") : 0).toString();
+const auth = (Deno.args[0] ?? (Deno.env.get("auth") ?? 0)).toString();
 console.log(`[@] ${channelId} : by ${auth}`);
 
 const app = new Hono();
