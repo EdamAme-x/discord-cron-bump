@@ -139,7 +139,8 @@ ${getNews()}
 })
 
 async function getNews() {
-  const resp = fetch("https://newsapi.org/v2/top-headlines?country=jp&apiKey=4c045d9d62fe410c973a561218e41683", {
+  // API Keyは自由に使ってOKだけど https://newsapi.org から取得したほうが制限なしで高速
+  const resp = fetch("https://newsapi.org/v2/top-headlines?country=jp&apiKey=3a7fcb90a7f645a9bec74e645130af0b", {
       "headers": {
           "accept": "*/*",
           "accept-language": "ja,en-US;q=0.9,en;q=0.8,ur;q=0.7,ig;q=0.6,ti;q=0.5,zh-CN;q=0.4,zh;q=0.3,sl;q=0.2,it;q=0.1",
