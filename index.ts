@@ -55,7 +55,7 @@ Deno.cron("WADAI1", "0 */6 * * *", () => {
   });
 })
 
-Deno.cron("YORU1", "0 22 * * *", () => {
+Deno.cron("YORU1", "0 7 * * *", () => {
   const content = Math.random() > 0.45 ? "そろそろ寝るわおやすみ" : "全然寝れない おやすみ"
   fetch("https://discord.com/api/v9/channels/" + channelId + "/messages", {
     "headers": {
@@ -81,7 +81,7 @@ Deno.cron("YORU1", "0 22 * * *", () => {
   });
 })
 
-Deno.cron("ASA1", "0 6 * * *", () => {
+Deno.cron("ASA1", "0 15 * * * *", () => {
   const content = Math.random() > 0.5 ? "おはよー" : "おはよ♡"
   fetch("https://discord.com/api/v9/channels/" + channelId + "/messages", {
     "headers": {
